@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Map Demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+      <div id="navLikeThing">
+        
+            <span id="headingTitle">Google Directions Service</span>
+      </div>
+
+      <div id="floating-panel">
+        <strong>Start:</strong>
+        <select id="start">
+          <option value="Dover, DE">Dover, DE</option>
+          <option value="Wilmington, DE">Wilmington</option>
+          <option value="Philadelphia, PA">Philadelphia</option>
+          <option value="Rehoboth Beach, DE">Rehoboth Beach</option>
+		  <option value="Baltimore, MD">Baltimore, MD</option>
+        </select>
+        <br>
+        <strong>End:</strong>
+        <select id="end">
+		  <option value="Rehoboth Beach, DE">Rehoboth Beach</option>
+          <option value="Wilmington, DE">Wilmington</option>
+          <option value="Philadelphia, PA">Philadelphia</option>
+          <option value="Dover, DE">Dover, DE</option>
+		  <option value="Baltimore, MD">Baltimore, MD</option>
+        </select>
+      </div>
+
+      <div id="map"></div>
+      <div id="directions-panel"></div>
+
+      <script src="script.js"></script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=APIkeyGoesHere&callback=initMap">
+      </script>
+
+  </body>
+</html>
